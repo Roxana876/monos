@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vida Animal: Monos, Simios y Orangutanes</title>
+  <style>
+    /* RESET */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f9f8f4;
+      color: #3a3a3a;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(90deg, #6b8e23, #8f6a3f);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.3rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    header p {
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    nav {
+      background-color: #4e6b47;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #f9f8f4;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background-color: #8f6a3f;
+      outline: none;
+    }
+
+    main {
+      flex-grow: 1;
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.07);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgb(0 0 0 / 0.12);
+    }
+
+    section h2 {
+      color: #6b8e23;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #8f6a3f;
+      padding-bottom: 0.3rem;
+    }
+
+    section p {
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+    }
+
+    .curiosities {
+      background: #e8f0d6;
+      border-left: 6px solid #8f6a3f;
+      padding: 1rem 1.5rem;
+      margin-top: 1.5rem;
+      border-radius: 8px;
+      font-style: italic;
+      color: #536238;
+    }
+
+    footer {
+      background-color: #4e6b47;
+      color: #f9f8f4;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        gap: 1rem;
+        padding: 0.8rem 0;
+      }
+
+      nav a {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Vida Animal: Monos, Simios y Orangutanes</h1>
+    <p>Descubre la diversidad, comportamiento y conservación de estos fascinantes primates</p>
+  </header>
+
+  <nav>
+    <a href="#monos">Monos</a>
+    <a href="#simios">Simios</a>
+    <a href="#orangutanes">Orangutanes</a>
+    <a href="#conservacion">Conservación</a>
+  </nav>
+
+  <main>
+    <section id="monos" tabindex="0">
+      <h2>Monos</h2>
+      <p>
+        Los monos son primates que representan un amplio grupo con más de 260 especies reconocidas,
+        divididas en monos del Nuevo Mundo (América) y monos del Viejo Mundo (África y Asia).
+        Los monos del Nuevo Mundo suelen tener cola prensil que usan para trepar y sujetarse a ramas.
+        Por ejemplo, el mono capuchino es famoso por su inteligencia y habilidad para usar herramientas.
+      </p>
+      <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Capuchin_Costa_Rica.jpg/800px-Capuchin_Costa_Rica.jpg" alt="Mono Capuchino" />
+      </div>
+      <p>
+        En cambio, los monos del Viejo Mundo, como el babuino y el macaco, tienen colas más cortas o no prensiles y a menudo
+        presentan una estructura social jerárquica compleja. Son animales muy adaptables y algunas especies pueden vivir en hábitats
+        muy variados, desde selvas hasta zonas semiáridas.
+      </p>
+      <div class="curiosities">
+        ¿Sabías que algunos monos usan diferentes tipos de alarmas para alertar a su grupo sobre depredadores específicos?
+        Este sistema de comunicación sofisticado es una de las muestras de su inteligencia social.
+      </div>
+    </section>
+
+    <section id="simios" tabindex="0">
+      <h2>Simios</h2>
+      <p>
+        Los simios son primates sin cola, con cerebros grandes y gran capacidad cognitiva. Incluyen gorilas, chimpancés, bonobos y gibones.
+        Son famosos por su comportamiento social avanzado, uso de herramientas y expresiones emocionales que se asemejan a las humanas.
+      </p>
+      <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Gorilla_gorilla_gorilla4.jpg/800px-Gorilla_gorilla_gorilla4.jpg" alt="Gorila" />
+      </div>
+      <p>
+        Por ejemplo, los gorilas viven en grupos familiares liderados por un macho espalda plateada, que protege y guía a la manada.
+        Los chimpancés son capaces de usar palos para extraer termitas o hacer herramientas improvisadas, mostrando un alto nivel de aprendizaje cultural.
+      </p>
+      <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Chimpanzee_in_Tanzania_edited.jpg/800px-Chimpanzee_in_Tanzania_edited.jpg" alt="Chimpancé usando herramienta" />
+      </div>
+      <p>
+        Los bonobos se caracterizan por su comportamiento pacífico y uso del contacto social para resolver conflictos, a diferencia de sus
+        parientes chimpancés.
+      </p>
+      <div class="curiosities">
+        Los simios pueden reconocer su reflejo en un espejo, una habilidad llamada autorreconocimiento que pocos animales poseen.
+      </div>
+    </section>
+
+    <section id="orangutanes" tabindex="0">
+      <h2>Orangutanes</h2>
+      <p>
+        Los orangutanes son los grandes simios que habitan las selvas tropicales de Borneo y Sumatra.
+        Tienen un pelaje rojizo y son expertos en la vida arbórea, construyendo nidos elaborados en las copas de los árboles para dormir.
+      </p>
+      <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Orangutan2.jpg/800px-Orangutan2.jpg" alt="Orangután en la selva tropical" />
+      </div>
+      <p>
+        Estos animales son solitarios en su mayoría y presentan una inteligencia destacada: utilizan herramientas, recuerdan rutas y tienen comunicación compleja.
+        Su dieta consiste en frutas, hojas, corteza y ocasionalmente insectos.
+      </p>
+      <div class="curiosities">
+        El orangután puede vivir hasta 35-45 años en la naturaleza y es considerado uno de los primates más inteligentes, comparable en habilidades a los chimpancés.
+      </div>
+    </section>
+
+    <section id="conservacion" tabindex="0">
+      <h2>Conservación</h2>
+      <p>
+        Desafortunadamente, muchas especies de monos, simios y orangutanes están en peligro debido a la destrucción de sus hábitats naturales,
+        la caza ilegal y el comercio de animales exóticos. La deforestación para agricultura y explotación maderera amenaza sus hogares.
+      </p>
+      <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Deforestation_in_Sumatra.jpg" alt="Deforestación en Sumatra" />
+      </div>
+      <p>
+        Varias organizaciones trabajan para proteger estas especies a través de reservas naturales, proyectos de educación ambiental y rehabilitación de animales.
+        <br /><br />
+        <strong>¿Cómo puedes ayudar?</strong>
+      </p>
+      <ul>
+        <li>Apoyando organizaciones que protegen a los primates y su hábitat.</li>
+        <li>Evitar comprar productos que contribuyan a la deforestación, como aceite de palma no sostenible.</li>
+        <li>Difundir información sobre la importancia de conservar estas especies.</li>
+      </ul>
+      <div class="curiosities">
+        Se estima que el orangután de Borneo ha perdido más del 60% de su población en los últimos 60 años debido a la pérdida de hábitat.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vida Animal | Proyecto educativo sobre primates</p>
+  </footer>
+</body>
+
+</html>
